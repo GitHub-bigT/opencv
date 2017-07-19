@@ -6,7 +6,7 @@
 using namespace cv;
 
 void main(){
-	Mat img = imread("pic.jpg");
+	Mat img = imread("pic.jpg",1);
 	Mat imgSize ;
 	resize(img,imgSize,Size(1000,700),0,0,CV_INTER_LINEAR);
 	namedWindow("picture");
